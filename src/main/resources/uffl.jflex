@@ -23,9 +23,6 @@ integerlit    			= ([1-9])({digit})*
 onelinecomment 			= \/\/[^\n\r]*
 nlinescomment 			= ( \/\*)((! \*\/)*)
 
-
-
-
 %%
 
 /* palavras reservadas */ 
@@ -78,8 +75,8 @@ System.out.println      {System.out.println("Token System.out.println");}
 /* identificadores e comentarios */ 
 
 {identifier}			{System.out.println("identificador: " +yytext());}
-{integerlit}			{System.out.println("Literais inteiros: " +  +yytext());}
-{digit}					{System.out.println("Inteiro: " +  +yytext());}
+{integerlit}		  	{System.out.println("Literal Inteiro: \"" + yytext() + "\"");}
+{digit}					{System.out.println("Intero: \"" + yytext() + "\"");}
 {onelinecomment} 		{}
 {nlinescomment} 		{}
 
