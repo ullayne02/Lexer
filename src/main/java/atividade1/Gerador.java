@@ -9,7 +9,7 @@ import java.io.File;
 
 public class Gerador {
 		public static void main(String[] args) {
-			String loginAluno = "exemplo";  
+			String loginAluno = "uffl";  
 			String path = "src/main/resources/";   
 			String arquivo = path + loginAluno + ".jflex";    
 			File file = new File(arquivo);	
